@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Blackthorn House</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><div><small>CASE 001</small><h1>BLACKTHORN HOUSE</h1></div><button id="reset">Reset</button></header><main>
+<section id="intro" class="card"></section>
+<section class="clue"><button id="pc">‹</button><div><small id="cn"></small><strong id="ct"></strong></div><button id="nc">›</button></section>
+<section class="actions"><div class="card count"><b id="remain"></b><span>remain</span><small><span id="elim"></span> eliminated</small></div><button id="toggle" class="card"></button><button id="accuse" class="card danger">Accuse</button></section>
+<section class="toolbar"><input id="search" type="search" placeholder="Search name or ID"><select id="size"><option>25</option><option selected>50</option><option>100</option></select></section>
+<section class="card list"><div class="head"><span>ID</span><span>NAME</span><span>AGE</span><span>OUT</span></div><div id="rows"></div></section>
+<section class="pager"><button id="first">«</button><button id="prev">‹</button><span id="pi"></span><button id="next">›</button><button id="last">»</button></section>
+</main><dialog id="dlg"><h2>Make an accusation</h2><select id="asel"></select><div><button id="cancel">Cancel</button><button id="confirm" class="danger">Confirm</button></div><p id="result"></p></dialog><div id="toast"></div><script src="app.js"></script></body></html>
